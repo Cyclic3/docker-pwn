@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run -v$(pwd):/mnt -it cyclic3/nasm sh -c 'cd /mnt; sh $(pwd)/build.sh'
+docker run --rm -v$(pwd):/mnt cyclic3/nasm sh -c 'cd /mnt; sh $(pwd)/build.sh'
