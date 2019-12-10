@@ -1,3 +1,4 @@
 FROM scratch
 COPY main /
-CMD ["/main"]
+ENTRYPOINT ["/main"]
+CMD ["/bin/sh"]
